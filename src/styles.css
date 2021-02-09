@@ -1,0 +1,123 @@
+.calendar {
+  box-sizing: border-box;
+  font-size: 1rem;
+  width: 100%;
+  
+}
+
+.calendar .day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 240px;
+  display: inline-flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  border: 0.5px solid grey;
+}
+
+
+.calendar .sunday{
+  background-color: rgb(224, 224, 224);
+}
+
+.monthName{
+  
+  z-index: 99;
+  background-color:transparent;
+  width: 90px;
+  padding: 0 5px 0 5px;
+  border-radius: 3px;
+  grid-area: overlap;
+}
+
+.monthName p{
+  background-color: rgb(224, 224, 224);
+  padding: 0 10px 0 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.dayofweek{
+  position: relative;
+  width: calc(100% / 7);
+  
+  display: inline-block;
+  background-color: white;
+  padding: 15px 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  
+}
+
+.stickyClass{
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+  border: 1px solid black;
+}
+
+.parentcont{
+  display: grid;
+  grid-template-areas: "overlap";
+}
+
+.dates{
+  grid-area: overlap;
+}
+
+.calImg{
+  width:95%;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.day p{
+  text-align: center;
+}
+
+.calPosts{
+  display: block;
+}
+
+.span{
+  background-color: violet;
+  border-radius: 50%;
+  font-weight: lighter;
+  padding: 3px;
+}
+
+.lightpink{
+  background-color: lightpink;
+}
+
+.lightblue{
+  background-color: rgb(196, 234, 247);
+}
+
+.lightyellow{
+  background-color: rgb(253, 253, 145);
+}
+
+.lightgreen{
+  background-color: rgb(132, 194, 132);
+}
+
+.text-center{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hide{
+  display: none;
+}
